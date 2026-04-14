@@ -13,4 +13,4 @@ function generarReporte(estado: EstadoMatricula): string {
 }
 
 const miEstado: EstadoMatricula = { tipo: "ACTIVA", asignaturas: ["TS-101", "React-202"] };
-console.log(generarReporte(miEstado));
+console.log(generarReporte(miEstado)); 
