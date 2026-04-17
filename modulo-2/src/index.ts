@@ -3,7 +3,7 @@ import { EstadoMatricula } from './domain/types/matricula';
 import { Estudiante } from './domain/types/estudiante';
 import { obtenerRecurso } from './services/api-client';
 
-// 2. Tu función de reporte (Mantenemos tu excelente lógica)
+// 2. Función de reporte 
 function generarReporte(estado: EstadoMatricula): string {
     switch (estado.tipo) {
         case "ACTIVA":
@@ -19,7 +19,7 @@ function generarReporte(estado: EstadoMatricula): string {
 async function ejecutarProtocolo() {
     console.log("--- Iniciando Sincronización con el Gremio ---");
 
-    // Probamos tu lógica original
+   
     const miEstado: EstadoMatricula = { tipo: "ACTIVA", asignaturas: ["TS-101", "React-202"] };
     console.log(generarReporte(miEstado));
 
