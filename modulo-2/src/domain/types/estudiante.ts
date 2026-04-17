@@ -11,3 +11,10 @@ export interface Asignatura {
     nombre: string;
     creditos: number;
 }
+// La <T> es un espacio reservado para el tipo de datos que recibiremos
+export interface RespuestaAPI<T> {
+    codigoEstado: number;
+    exito: boolean;
+    datos: T;          // Aquí es donde la magia ocurre: se adaptará a lo que pidamos
+    errores?: string[];
+}
